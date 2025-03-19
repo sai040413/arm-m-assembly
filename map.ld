@@ -10,6 +10,6 @@ SECTIONS
     *(.vectors*)
     *(.text*)
 
-    }>MEM
+    } > MEM
 
 }

@@ -1,6 +1,6 @@
 .section .vectors
 vector_table:
-    .word 0xABCD
+    .word 0xABC0
     .word reset_handler
     .zero 400
 
