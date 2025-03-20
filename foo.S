@@ -8,7 +8,19 @@ vector_table:
     .align 1
     .type reset_handler, %function
 reset_handler:
-mov r1,#0x01
-mov r2, #0x02
+mov r1,#7
+mov r2, #3
+
 add r3, r1 , r2
+    b sai
+
+sai2:
+sub r4, r1,r2
+    b end
+
+sai:
+mov r5,r3
+lsl r6,r5,#2
+    b sai2
+end:
 bl .
